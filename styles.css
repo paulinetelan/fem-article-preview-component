@@ -51,30 +51,75 @@ p, h4 {
 
 .credit-text {
   display: inline-block;
-  vertical-align: align;
-}
-
-.date-text{
-  color: hsl(212, 23%, 69%);
+  /* vertical-align: align */
+  width: 100%;
 }
 
 .img-avatar {
   border-radius: 100%;
-  display: inline-block;
+  /* display: inline-block; */
+  float: left;
   height: 45px;
   width: 45px;
   margin-right: 2%;
-  vertical-align: top;
+  /* vertical-align: top; */
 }
 
-.share-icon {
+.date-text {
+  color: hsl(212, 23%, 69%);
+}
+
+/* Share Section  */
+.share-section {
+  display: inline;
+}
+
+.share-button {
   background: hsl(210, 46%, 95%);
-  border-radius:50%;
+  border-radius: 50%;
   display: inline-block;
   line-height: 35px;
   height: 35px;
   width: 35px;
-  position:absolute;
+  padding-top: auto;
+  padding-bottom: auto;
+  position: absolute;
   right: 0;
   text-align: center;
+}
+
+.pressed {
+  background: hsl(212, 23%, 69%);
+}
+
+.share-popup {
+  visibility: hidden;
+  height: 30px;
+  width: 180px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  position: absolute;
+  right: -75px;
+  top: -37px;
+  z-index: 1;
+}
+
+/* Popup arrow (follows wherever popup goes)*/
+.share-popup::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.share-popup.show {
+  visibility: visible;
+  animation: fadeIn 1s;
 }
