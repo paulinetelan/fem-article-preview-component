@@ -13,26 +13,9 @@ h1 {
   font-weight: 700;
 }
 
-h4 {
-  margin: 3% 0 0 0;
-}
-
-p {
+p, h4 {
   margin: 0;
 }
-
-table{
-  margin-top: 3%;
-  margin-right: 0;
-  padding-right: 0;
-}
-
-
-td {
-  padding-right: 3%;
-}
-
-
 
 .article-section {
   background-color: #ffff;
@@ -47,22 +30,29 @@ td {
 }
 
 .article-text {
-  margin: 3% 6%;
+  display: inline-block;
+  padding: 3% 6%;
+  height: 100%;
+  width: 47%;
 }
 
 .img-drawers {
   border-radius: 15px 0 0 15px;
-  float: left;
+  display: inline-block;
   height: 100%;
   width: 40%;
-  margin-right: 5%;
-  margin-bottom: 100%;
+  vertical-align: top;
 }
 
-.share-td {
-  margin-left: 30%;
+.credit-section {
+  margin-top: 6%;
+  position: relative;
 }
 
+.credit-text {
+  display: inline-block;
+  vertical-align: align;
+}
 
 .date-text{
   color: hsl(212, 23%, 69%);
@@ -70,14 +60,21 @@ td {
 
 .img-avatar {
   border-radius: 100%;
-  /* float: left; */
-  /* margin-top: 3%;
-  margin-right: 3%;
-  margin-bottom: 100%; */
+  display: inline-block;
   height: 45px;
   width: 45px;
+  margin-right: 2%;
+  vertical-align: top;
 }
 
-/* .img-icon {
-  float: right;
-} */
+.share-icon {
+  background: hsl(210, 46%, 95%);
+  border-radius:50%;
+  display: inline-block;
+  line-height: 35px;
+  height: 35px;
+  width: 35px;
+  position:absolute;
+  right: 0;
+  text-align: center;
+}
