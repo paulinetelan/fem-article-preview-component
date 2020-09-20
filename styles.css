@@ -17,6 +17,8 @@ p, h4 {
   margin: 0;
 }
 
+/* Article Section */
+
 .article-section {
   background-color: #ffff;
   border-radius: 15px;
@@ -44,6 +46,8 @@ p, h4 {
   vertical-align: top;
 }
 
+/* Credit section */
+
 .credit-section {
   margin-top: 6%;
   position: relative;
@@ -66,40 +70,43 @@ p, h4 {
   color: hsl(212, 23%, 69%);
 }
 
-/* Share Section  */
-.share-section {
-  display: inline;
-}
-
+/* Share Button  */
 .share-button {
   background: hsl(210, 46%, 95%);
   border-radius: 50%;
-  display: inline-block;
-  line-height: 35px;
   height: 35px;
   width: 35px;
-  padding-top: auto;
-  padding-bottom: auto;
+  line-height: 35px;
   position: absolute;
+  top: 2%;
+  bottom: 2%;
   right: 0;
   text-align: center;
 }
 
-.pressed {
-  background: hsl(212, 23%, 69%);
+.active {
+  background: hsl(217, 19%, 35%);
+}
+
+.share-svg {
+  fill: #6E8098;
+}
+
+.share-svg.active{
+  fill: #ffff;
 }
 
 .share-popup {
   visibility: hidden;
-  width: 50%;
+  width: 200px;
   background-color: hsl(217, 19%, 35%);
   color: hsl(212, 23%, 69%);
-  padding: 5% 7%;
+  padding: 4% 7%;
   text-align: center;
   border-radius: 6px;
   position: absolute;
   right: -110px;
-  top: -80px;
+  top: -70px;
   z-index: 1;
 }
 
@@ -124,10 +131,12 @@ p, h4 {
 .popup-text {
   display: inline-block;
   letter-spacing: 0.25rem;
-  margin-right: 3%;
+  margin-right: 7%;
+  vertical-align: middle;
 }
 
 .popup-icon {
   display: inline-block;
   padding: 0 3%;
+  vertical-align: middle;
 }
