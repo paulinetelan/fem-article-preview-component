@@ -51,18 +51,15 @@ p, h4 {
 
 .credit-text {
   display: inline-block;
-  /* vertical-align: align */
   width: 100%;
 }
 
 .img-avatar {
   border-radius: 100%;
-  /* display: inline-block; */
   float: left;
   height: 45px;
   width: 45px;
   margin-right: 2%;
-  /* vertical-align: top; */
 }
 
 .date-text {
@@ -94,15 +91,15 @@ p, h4 {
 
 .share-popup {
   visibility: hidden;
-  height: 30px;
-  width: 180px;
-  background-color: #555;
-  color: #fff;
+  width: 50%;
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(212, 23%, 69%);
+  padding: 5% 7%;
   text-align: center;
   border-radius: 6px;
   position: absolute;
-  right: -75px;
-  top: -37px;
+  right: -110px;
+  top: -80px;
   z-index: 1;
 }
 
@@ -122,4 +119,15 @@ p, h4 {
 .share-popup.show {
   visibility: visible;
   animation: fadeIn 1s;
+}
+
+.popup-text {
+  display: inline-block;
+  letter-spacing: 0.25rem;
+  margin-right: 3%;
+}
+
+.popup-icon {
+  display: inline-block;
+  padding: 0 3%;
 }
