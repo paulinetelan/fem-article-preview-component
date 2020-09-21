@@ -1,8 +1,12 @@
+html {
+  height: 100%;
+}
 body {
   background-color: hsl(210, 46%, 95%);
   color: hsl(214, 17%, 51%);
   font-family: 'Manrope', sans-serif;
   font-size: 0.95rem;
+  min-height: 100%;
   margin: 0;
 }
 
@@ -41,7 +45,6 @@ p, h4 {
 .img-drawers {
   border-radius: 15px 0 0 15px;
   display: inline-block;
-  /* margin: -10px 0px 0px -180px; */
   height: 100%;
   width: 40%;
   object-fit: cover;
@@ -178,23 +181,49 @@ p, h4 {
 
 /* Phone */
 @media (max-width: 640px) {
+
+  body {
+    border-style: solid;
+  }
+
+  h1 {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 5%;
+  }
+
+  p {
+    line-height: 1.7;
+  }
+
   .article-section {
     background-color: #ffff;
     border-radius: 15px;
-    height: 80%;
-    width: 80%;
+    height: 70%;
+    width: 90%;
     position: absolute;
-    top: 10%;
-    bottom: 10%;
-    left: 10%;
-    right: 10%;
+    top: 15%;
+    left: 5%;
   }
 
   .img-drawers {
     border-radius: 15px 15px 0 0;
     display: block;
-    height: 40%;
+    height: 38%;
     width: 100%;
-    vertical-align: top;
+    object-fit: cover;
+    object-position: 0 3%;
+  }
+
+  .article-text {
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 7%;
+    padding: 0 7%;
+  }
+
+  .credit-section {
+    margin-top: 15%;
+    position: relative;
   }
 }
