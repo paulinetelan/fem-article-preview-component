@@ -115,18 +115,6 @@ p, h4 {
   z-index: 1;
 }
 
-/* Popup arrow (follows wherever popup goes)*/
-.share-popup::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -10px; /* shift arrow to left to accommodate fir width */
-  border-width: 10px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
 /* Toggle this class - hide and show the popup */
 .share-popup.show {
   visibility: visible;
@@ -144,6 +132,22 @@ p, h4 {
   display: inline-block;
   padding: 0 3%;
   vertical-align: middle;
+}
+
+/* Desktop-only styles
+  only insert popup arrow on desktop and tablet*/
+@media (min-width: 641px){
+  /* Popup arrow (follows wherever popup goes)*/
+  .share-popup::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px; /* shift arrow to left to accommodate fir width */
+    border-width: 10px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
 }
 
 /* Tablet */
@@ -224,6 +228,19 @@ p, h4 {
 
   .credit-section {
     margin-top: 15%;
-    position: relative;
+  }
+
+  .share-button {
+    z-index: 1;
+  }
+
+  /* Popup realignment */
+  .share-popup {
+    width: 102%;
+    border-radius: 0 0 6px 6px;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: -8%;
   }
 }
