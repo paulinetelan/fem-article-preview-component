@@ -47,7 +47,6 @@ p, h4 {
 }
 
 /* Credit section */
-
 .credit-section {
   margin-top: 6%;
   position: relative;
@@ -116,8 +115,8 @@ p, h4 {
   position: absolute;
   top: 100%;
   left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
+  margin-left: -10px; /* shift arrow to left to accommodate fir width */
+  border-width: 10px;
   border-style: solid;
   border-color: #555 transparent transparent transparent;
 }
@@ -139,4 +138,44 @@ p, h4 {
   display: inline-block;
   padding: 0 3%;
   vertical-align: middle;
+}
+
+/* Tablet */
+@media (min-width: 641px) and (max-width: 1023px){
+  .article-section {
+    background-color: #ffff;
+    border-radius: 15px;
+    height: 40%;
+    width: 80%;
+    position: absolute;
+    top: 30%;
+    bottom: 30%;
+    left: 10%;
+    right: 10%;
+  }
+  .credit-section {
+    margin-top: 12%;
+    position: relative;
+  }
+
+  .share-popup {
+    visibility: hidden;
+    width: 200px;
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(212, 23%, 69%);
+    padding: 4% 7%;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    right: -103px; /* Shift popup a bit to the left compared to desktop to align with button */
+    top: -70px;
+    z-index: 1;
+  }
+}
+
+/* Phone */
+@media (max-width: 640px) {
+  h1 {
+    color: blue;
+  }
 }
