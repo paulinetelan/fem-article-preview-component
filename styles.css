@@ -1,19 +1,22 @@
 html {
   height: 100%;
 }
+
 body {
   background-color: hsl(210, 46%, 95%);
   color: hsl(214, 17%, 51%);
   font-family: 'Manrope', sans-serif;
-  font-size: 0.95rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
   min-height: 100%;
   margin: 0;
 }
 
 h1 {
   color: hsl(217, 19%, 35%);
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   letter-spacing: .05rem;
+  line-height: 1.5;
   font-weight: 700;
 }
 
@@ -26,35 +29,29 @@ p, h4 {
 .article-section {
   background-color: #ffff;
   border-radius: 15px;
-  height: 40%;
-  width: 60%;
+  width: 70%;
   position: absolute;
   top: 30%;
-  bottom: 30%;
-  left: 20%;
-  right: 20%;
+  left: 15%;
 }
 
 .article-text {
   display: inline-block;
   padding: 3% 6%;
-  height: 100%;
   width: 47%;
+  vertical-align: top;
 }
 
 .img-drawers {
   border-radius: 15px 0 0 15px;
   display: inline-block;
-  height: 100%;
   width: 40%;
   object-fit: cover;
-  object-position: 0;
-  vertical-align: top;
 }
 
 /* Credit section */
 .credit-section {
-  margin-top: 6%;
+  margin-top: 8%;
   position: relative;
 }
 
@@ -66,9 +63,9 @@ p, h4 {
 .img-avatar {
   border-radius: 100%;
   float: left;
-  height: 45px;
-  width: 45px;
-  margin-right: 2%;
+  height: 55px;
+  width: 55px;
+  margin-right: 3%;
 }
 
 .date-text {
@@ -82,9 +79,8 @@ p, h4 {
   height: 35px;
   width: 35px;
   line-height: 35px;
+  margin-top: 2%;
   position: absolute;
-  top: 2%;
-  bottom: 2%;
   right: 0;
   text-align: center;
 }
@@ -110,8 +106,8 @@ p, h4 {
   text-align: center;
   border-radius: 6px;
   position: absolute;
-  right: -110px;
-  top: -70px;
+  right: -116px;
+  top: -75px;
   z-index: 1;
 }
 
