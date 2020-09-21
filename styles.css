@@ -41,8 +41,11 @@ p, h4 {
 .img-drawers {
   border-radius: 15px 0 0 15px;
   display: inline-block;
+  /* margin: -10px 0px 0px -180px; */
   height: 100%;
   width: 40%;
+  object-fit: cover;
+  object-position: 0;
   vertical-align: top;
 }
 
@@ -175,7 +178,23 @@ p, h4 {
 
 /* Phone */
 @media (max-width: 640px) {
-  h1 {
-    color: blue;
+  .article-section {
+    background-color: #ffff;
+    border-radius: 15px;
+    height: 80%;
+    width: 80%;
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    left: 10%;
+    right: 10%;
+  }
+
+  .img-drawers {
+    border-radius: 15px 15px 0 0;
+    display: block;
+    height: 40%;
+    width: 100%;
+    vertical-align: top;
   }
 }
