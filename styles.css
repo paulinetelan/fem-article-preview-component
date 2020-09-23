@@ -29,6 +29,7 @@ p, h4 {
 .article-section {
   background-color: #ffff;
   border-radius: 15px;
+  display: flex;
   width: 70%;
   position: absolute;
   top: 30%;
@@ -43,10 +44,14 @@ p, h4 {
 }
 
 .img-drawers {
+  background: url("images/drawers.jpg");
   border-radius: 15px 0 0 15px;
-  display: inline-block;
+  /* display: inline-block; */
   width: 40%;
-  object-fit: cover;
+  background-position: left;
+  background-size: cover;
+  /* object-fit: cover;
+  object-position: center; */
 }
 
 /* Credit section */
@@ -149,15 +154,8 @@ p, h4 {
 /* Tablet */
 @media (min-width: 641px) and (max-width: 1023px){
   .article-section {
-    background-color: #ffff;
-    border-radius: 15px;
-    height: 40%;
     width: 80%;
-    position: absolute;
-    top: 30%;
-    bottom: 30%;
     left: 10%;
-    right: 10%;
   }
   .credit-section {
     margin-top: 12%;
@@ -197,33 +195,30 @@ p, h4 {
   }
 
   .article-section {
-    background-color: #ffff;
-    border-radius: 15px;
-    height: 70%;
+    display: grid;
+    /* grid-template-rows: 30% 70%; */
+    grid-gap: 3%;
+    grid-auto-rows: 300px auto;
     width: 90%;
-    position: absolute;
-    top: 15%;
+    top: 7%;
     left: 5%;
   }
 
   .img-drawers {
     border-radius: 15px 15px 0 0;
-    display: block;
-    height: 38%;
+    grid-row: 1;
     width: 100%;
-    object-fit: cover;
-    object-position: 0 3%;
   }
 
   .article-text {
     box-sizing: border-box;
+    grid-row: 2;
     width: 100%;
-    margin-top: 7%;
     padding: 0 7%;
   }
 
   .credit-section {
-    margin-top: 15%;
+    margin: 10% 0 15% 0;
   }
 
   .share-button {
