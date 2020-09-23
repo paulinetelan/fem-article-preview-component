@@ -187,6 +187,15 @@ p, h4 {
   }
 }
 
+@media (min-width: 641px) and (max-width: 705px) {
+  .credit-text h4{
+    font-size: 0.9rem;
+  }
+  .credit-text p{
+    font-size: 0.9rem;
+  }
+}
+
 /* Phone */
 @media (max-width: 640px) {
   h1 {
